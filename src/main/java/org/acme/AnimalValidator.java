@@ -24,9 +24,9 @@ public class AnimalValidator implements OutputGuardrail {
                 return reprompt("Not a type of animal", "No more ball pythons!");
             }
 
-            boolean is = smartGreeter.isA(pet.type(), pet.animal());
+            boolean isCorrectType = smartGreeter.isA(pet.type(), pet.animal());
 
-            if (!is) {
+            if (!isCorrectType) {
                 return reprompt("A " + pet.type() + " is not a " + pet.animal(), "Make sure that animal is a type of " + pet.animal());
             }
         } catch (JsonProcessingException e) {
