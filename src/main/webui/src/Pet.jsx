@@ -55,6 +55,9 @@ export default function Pet() {
             </div>
 
         </div> ||
-        <div className="card"></div>;
+        <div className="card blank">
+            <div>Invoking the magic gerbils ...</div>
+            <img className="spinner" src="/quinoa/spinner.png"></img>
+        </div>;
 };
 
